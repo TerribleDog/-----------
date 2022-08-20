@@ -5,6 +5,10 @@ let displayAnswer = document.querySelector('.display_answer')
 
 button.forEach(function(i) {
     i.onclick = function() {
+        if (display.innerText == "0"){
+            display.innerText = ""
+        }
+
         display.innerText = display.innerText + i.innerText
 
         if (i.innerText == '='){
